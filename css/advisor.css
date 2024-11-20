@@ -1,15 +1,6 @@
     @charset "utf-8";
 /* CSS Document */
 
-/*------------------------------------------------------------------
-[Theme Base Stylesheet]
-
-Project:		Advisor
-Version:		2.0
-Last change:	Initial RELEASED 
-Primary use:	Agency Theme
-
--------------------------------------------------------------------*/
 
 @import "font-awesome.min.css";
 @import "icons.css";
@@ -120,12 +111,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: inherit;
     font-weight: 500;
     line-height: 1.1;
-    color: #DAA520;
+    color: #A08864 ;
 }
 .link-grey{ color:#929292; font-size:15px;}
 .link-grey:hover{ color:#000;}
 .link-grey i{ margin-right:4px;}
-.color-purple{ color:#1F3A93 !important;}
+.color-purple{ color:#09163D !important;}
 
 .height-5 			{height: 5px;}
 .height-10 			{height: 10px;}
@@ -249,7 +240,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .pagging li a				{ background: #f2f2f2; display: block; font-size: 11px; height: 24px; line-height: 25px;  text-align: center; width: 24px;}
 .pagging li a:hover		{ background: #7f7f7f; color:#fff;}
 
-.loader{ position:fixed; left:0; right:0; top:0; bottom:0; background:url(../images/loader.gif) no-repeat center center #fff; z-index:50000;}
+.loader{ position:fixed; left:0; right:0; top:0; bottom:0; 
+         /*background:url(../images/loader.gif) no-repeat center center #fff; */
+         z-index:50000;}
 .spinner { height: 40px; left: 50%;margin: -20px 0 0 -20px;position: absolute; top: 50%;width: 40px;}
 .double-bounce1, .double-bounce2 { width: 100%; height: 100%; border-radius: 50%; background-color: #333; opacity: 0.6; position: absolute; top: 0; left: 0; -webkit-animation: sk-bounce 2.0s infinite ease-in-out;  animation: sk-bounce 2.0s infinite ease-in-out;}
 .double-bounce2 { -webkit-animation-delay: -1.0s; animation-delay: -1.0s;}
@@ -366,7 +359,7 @@ HEADER
 .header-links li.header-number{ margin-left:0;}
 .header-links li.header-number a, .header-links li.header-time a{ color:#2a2a2a; font-size:17px; display:block; line-height: 42px;}
 .header-links li i{ float:left; width:44px; height:44px; border-radius:100%; border:1px solid #b7b7b7; margin-right:10px; text-align:center; color:#666666;font-size: 22px;line-height: 40px;}
-.header-links li .btn-quote{ position:relative; top:-8px; background:#1F3A93;}
+.header-links li .btn-quote{ position:relative; top:-8px; background:#09163D;}
 .header-links li .btn-quote:hover{ background:#2a1e4a;}
 
 
@@ -434,6 +427,7 @@ ALL SECTIONS
     background: #f3f5fa;
     border-top: 7px solid transparent;
     padding: 38px 34px;
+    margin-bottom: 20px;
 }
 .service-box.two{border-top:7px solid transparent;}
 .service-box.three{border-bottom:7px solid transparent; border-top:0;-webkit-transition: all 0.4s ease 0s;-moz-transition: all 0.4s ease 0s;-ms-transition: all 0.4s ease 0s;-o-transition: all 0.4s ease 0s;transition: all 0.4s ease 0s;}
@@ -496,7 +490,9 @@ ALL SECTIONS
 .request-a-callback-content{ background: url(../images/reciver-icon.png) no-repeat 90% 98% #fff; padding:64px 40px; float:left; width:50%;min-height: 422px;}
 .request-a-callback-form{ padding:60px 40px; float:left; width:50%;min-height: 422px;}
 .callback-bg{ background:url(../images/parallax/2.jpg)}
-.callback-bg .request-a-callback{ background:rgba(0,0,0,0.50);}
+    .callback-bg .request-a-callback {
+        background: #949494;
+    }
 .callback-bg .request-a-callback-content{ background:none;}
 .callback-bg .request-a-callback-content h3, .callback-bg .request-a-callback-content p{ color:#fff;}
 .callback-bg input[type="text"], .callback-bg input[type="email"], .callback-bg input[type="number"], .callback-bg input[type="password"], .callback-bg .selectboxit-container .selectboxit{ border-color:#fff;}
@@ -705,7 +701,7 @@ aside .testimonial-content{ padding:45px 30px 60px; background-repeat: no-repeat
     display: block;
     width:  35px;
     height: 6px;
-    background-color: #DAA520;
+    background-color: #A08864 ;
     border-radius:  3px;
     margin: 16px 0 0;
 }
@@ -734,7 +730,7 @@ aside .testimonial-content{ padding:45px 30px 60px; background-repeat: no-repeat
     transition: .3s;
     margin-right: 5px;
     display: inline-block;
-    background-color: #daa520;
+    background-color: #A08864 ;
     color: #ffffff;
 }
 .lifereligo figure {
@@ -781,7 +777,7 @@ aside .testimonial-content{ padding:45px 30px 60px; background-repeat: no-repeat
     display: block;
     width: 47px;
     height: 5px;
-    background: #fde428;
+    background: #AA9474;
     margin: 0 0 20px;
 }
 .case-study h5 {
@@ -1040,7 +1036,7 @@ FOOTER
 
 -------------------------------------------------------------------*/
 
-#footer{ background: url(../images/colorfull-row.jpg) repeat-x 0 0 #f5f5f5; color:#333333;}
+#footer{ background: url(../images/colorfull-row1.jpg) repeat-x 0 0 #f5f5f5; color:#333333;}
 #footer a{ color:#333333;}
 #footer .footer-top{ padding:70px 0;}
 #footer .footer-top p{ margin:8px 0;}
