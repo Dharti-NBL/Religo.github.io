@@ -475,7 +475,11 @@ ALL SECTIONS
 .testi-bg{ background:url(../images/testi-bg.jpg) no-repeat; background-size:cover;}
 .testi-bg .heading h2, .testi-bg .heading p{ color:#fff;}
 .testi-bg .testimonials-author p, .testi-bg .testimonials-author p span{ color:#fff;}
-.rating li{ display:inline-block; color:#fab637; list-style:none;}
+.rating li {
+    display: inline-block;
+    color: #A08864;
+    list-style: none;
+}
 .cd-testimonials-item .testimonials-author p{ color:#131313;}
 .cd-testimonials-item .testimonials-author p span{ color:#737373;}
 .testimonial-2 { text-align:center; padding-top:40px;}
@@ -816,21 +820,21 @@ aside .testimonial-content{ padding:45px 30px 60px; background-repeat: no-repeat
 .bordered-item .bordered-thumb {
     position: relative;
 }
-.bordered-item .bordered-title {
-    padding: 10px 80px 11px 20px;
-    background: rgba(218, 165, 32, 0.4);
-    min-height: 45px;
-    position: absolute;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    visibility: visible;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
+    .bordered-item .bordered-title {
+        padding: 10px 80px 11px 20px;
+        background: #A08864;
+        min-height: 45px;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        visibility: visible;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
 .bordered-item .bordered-title h5 {
     font-weight: 600;
     font-size: 16px;
@@ -854,24 +858,24 @@ aside .testimonial-content{ padding:45px 30px 60px; background-repeat: no-repeat
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-.bordered-item .bordered-content {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
-    height: 100%;
-    background: rgba(218, 165, 32, 0.4);
-    font-size: 14px;
-    padding: 30px 30px 40px;
-    transform: translateY(-100%);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    text-align:left;
-}
+    .bordered-item .bordered-content {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        height: 100%;
+        background: #A08864;
+        font-size: 14px;
+        padding: 30px 30px 40px;
+        transform: translateY(-100%);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        text-align: left;
+    }
 .bordered-item:hover .bordered-content {
     opacity: 1;
     visibility: visible;
@@ -1046,7 +1050,13 @@ FOOTER
 #footer .footer-address-widget ul li{ list-style:none; float:left; font-size:20px; width:40%; position:relative;padding-left: 60px;}
 #footer .footer-address-widget ul li:nth-child(2){ width:60%;}
 #footer .footer-address-widget ul li span, #footer .footer-address-widget ul li a{ display:block; font-size:16px;}
-#footer .footer-address-widget ul li i{ font-size: 40px;left: 0; position: absolute;top: 8px;}
+    #footer .footer-address-widget ul li i {
+        font-size: 40px;
+        left: 0;
+        position: absolute;
+        top: 8px;
+        color: #A08864;
+    }
 #footer .footer-address-widget ul li i.icon-icons74{ font-size:44px;top: 4px;}
 #footer .usefull-links-widget{ margin-top:45px;}
 #footer .usefull-links-widget h4{ padding-bottom:15px; color:#131313;}
@@ -1078,3 +1088,11 @@ FOOTER
 #footer.dark .newsletter-widget .social{ background-color:#222732}
 #footer.dark .social li a i{ background:none; border-color:#525863; color:#fff;}
 #footer.dark .footer-bottom{ background:#2d3440;}
+.btn.btn-bordered-dark.iconic {
+    color: #09163D;
+    border: 2px solid #09163D;
+}
+.btn.btn-bordered-dark:hover {
+    color: #fff;
+    background: #09163D;
+}
