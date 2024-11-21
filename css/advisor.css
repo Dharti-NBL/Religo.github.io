@@ -1040,7 +1040,7 @@ FOOTER
 
 -------------------------------------------------------------------*/
 
-#footer{ background: url(../images/colorfull-row1.jpg) repeat-x 0 0 #f5f5f5; color:#333333;}
+#footer{ background: url(../images/colorfull-row.jpg) repeat-x 0 0 #f5f5f5; color:#333333;}
 #footer a{ color:#333333;}
 #footer .footer-top{ padding:70px 0;}
 #footer .footer-top p{ margin:8px 0;}
@@ -1094,6 +1094,7 @@ FOOTER
 }
 .btn.btn-bordered-dark:hover {
     background: #09163D;
+    color: #ffffff;
 }
 .btn.btn-white:hover {
     background: #09163D;
