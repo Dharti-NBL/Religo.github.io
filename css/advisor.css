@@ -1427,9 +1427,7 @@ input[type="text"], input[type="email"], input[type="number"], input[type="passw
 #cases-container figure {
     margin: 0;
 }
-ul li{
-    margin-bottom:10px;
-}
+
 .left-nav li {
     margin-bottom: 0px;
 }
