@@ -1285,9 +1285,9 @@ p {
 a {
     text-decoration: none;
 }
-/* ol, ul {
+ ol, ul {
     padding-left: 0;
-} */
+} 
 input[type="text"], input[type="email"], input[type="number"], input[type="password"] {
     background: #fff;
     border: 1px solid #838383;
