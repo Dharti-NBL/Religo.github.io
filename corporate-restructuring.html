@@ -51,47 +51,59 @@
     <header id="header" class="header-three">
         <div class="container-fluid">
             <!-- HEADER INNER -->
-            <div class="header clearfix">
-                <a href="index.html" class="logo"><img src="images/logo.svg" alt=""></a>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-nav" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+            <div class="header d-flex justify-content-between align-items-center">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <!-- Navbar Toggle for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-nav" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- <ul class="header-links clearfix">
-                    <li class="header-number"><a href="#."><i class="icon-phone4"></i>+1 900 234 567 - 68</a></li>
-                    <li class="header-time"><a href="#."><i class="icon-clock"></i>Mon to Sat 08:00 - 16:30</a></li>
-                    <li><a href="#." class="btn btn-primary btn-quote" data-text="Get a quote">Get a quote</a></li>
-                </ul> -->
-                <nav class="main-nav navbar-collapse collapse" id="primary-nav">
-                    <ul class="nav nav-pills">
-                        <li class="dropdown"><a href="index.html">Home </a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li class="dropdown active">
-                            <a href="services.html">Services <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="capital-market-services.html">Capital Market Services</a></li>
-                                <li><a href="mergersandacquisitions.html">Mergers and Acquisitions</a></li>
-                                <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
-                                <li><a href="corporate-restructuring.html">Corporate Restructuring</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="clientele.html">Clientele</a></li>
-                        <li><a href="transactions.html">Transactions</a></li>
-                        <li class="dropdown">
-                            <a href="#.">Pages <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="investor-relations.html">Investor Relations</a></li>
-                                <li><a href="insights&resources.html">Insights & Resources</a></li>
-                                <li><a href="legal&compliance.html">Legal & Compliance</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="faq.html">FAQs</a></li>
-                                <li><a href="careers.html">Careers</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact-us.html">Contact Us </a></li>
-                    </ul>
+                <!-- Navigation -->
+                <nav class="main-nav navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse" id="primary-nav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                    <li><a class="dropdown-item" href="capital-market-services.html">Capital Market Services</a></li>
+                                    <li><a class="dropdown-item" href="mergersandacquisitions.html">Mergers and Acquisitions</a></li>
+                                    <li><a class="dropdown-item" href="corporate-advisory.html">Corporate Advisory</a></li>
+                                    <li><a class="dropdown-item" href="corporate-restructuring.html">Corporate Restructuring</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="clientele.html">Clientele</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="transactions.html">Transactions</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                                    <li><a class="dropdown-item" href="investor-relations.html">Investor Relations</a></li>
+                                    <li><a class="dropdown-item" href="insights&amp;resources.html">Insights &amp; Resources</a></li>
+                                    <li><a class="dropdown-item" href="legal&amp;compliance.html">Legal &amp; Compliance</a></li>
+                                    <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -100,15 +112,17 @@
     <!-- BREADCRUMB -->
     <section class="subpage-header">
         <div class="container">
-            <div class="site-title clearfix">
-                <h2>Corporate Restructuring </h2>
-                <ul class="breadcrumbs">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li>Corporate Restructuring</li>
-                </ul>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="site-title clearfix">
+                    <h2>Corporate Restructuring </h2>
+                    <ul class="breadcrumbs">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li>Corporate Restructuring</li>
+                    </ul>
+                </div>
+                <a href="contact-us.html" class="btn btn-primary get-in-touch" data-text="Contact us"><i class="icon-telephone114"></i>Contact us</a>
             </div>
-            <a href="contact-us.html" class="btn btn-primary get-in-touch" data-text="Contact us"><i class="icon-telephone114"></i>Contact us</a>
         </div>
     </section>
 
@@ -119,14 +133,15 @@
                 <div class="col-md-4 animate fadeInLeft">
                     <aside>
                         <ul class="left-nav">
-                            <li><a href="#." class="active">Debt Restructuring <i class="fa fa-angle-right"></i></a></li>
-                            <li><a href="#.">Buybacks and Delisting <i class="fa fa-angle-right"></i></a></li>
-                            <li><a href="#.">Takeovers and Open Offers <i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#." class="active">Overview<i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#.">Corporate Restructuring Services<i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#.">Why Choose Religo Capital Advisors <i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#.">FAQs <i class="fa fa-angle-right"></i></a></li>
                         </ul>
 
                         <div class="help-widget">
                             <h5>how can we help you?</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor.</p>
+                            <p>Get in touch with us today for tailored solutions that fit your needs.</p>
                             <a href="contact-us.html" class="btn btn-primary btn-white get-in-touch" data-text="Contact us"><i class="icon-telephone114"></i>Contact us</a>
                         </div>
 
@@ -135,11 +150,11 @@
                         <div class="testimonial">
                             <div class="testimonial-content">
                                 <h5>Testimonials</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
+                                <p>Working with Religo Capital Advisor was an absolute pleasure. Their professionalism, timely delivery, and ongoing support exceeded our expectations.</p>
                             </div>
                             <div class="testimonials-author">
                                 <img class="img-circle" src="images/review-author-img.png" alt="">
-                                <p>Boris Hunt<span>(Sales Agent)</span></p>
+                                <p>Lucas Gray<span>(Business Strategist)</span></p>
                             </div>
                         </div>
                     </aside>
@@ -153,17 +168,106 @@
                     </div>
                     <br>
                     <br>
-                    <p>We have over 15 years of experience Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean Lorem ipsm dolor sit the power of consectetur adi pisi cing elit, sed do eiusmod tempor xercitationemut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum nec risus et suscipit Curabitur metus ipsum. But I must explain to you how all this mistaken idea of denouncing.</p>
-                    <p>expound the actual teachings. of the great explorer of the truth, the master-builder of No one rejects, dislikes, or human happiness. </p>
+                    <h3>Overview</h3>
+                    <p>At Religo Capital Advisors Private Limited, we specialize in comprehensive corporate restructuring services designed to enhance the efficiency, effectiveness, and competitiveness of businesses. Our expertise spans various aspects of restructuring, including mergers and acquisitions, demergers, takeovers, delistings, and share buybacks. We provide strategic advisory and execution support to ensure seamless transitions and optimal outcomes for our clients. </p>
+                    <!-- <p>expound the actual teachings. of the great explorer of the truth, the master-builder of No one rejects, dislikes, or human happiness. </p>-->
                     <br>
-                    <h3>Business plan market</h3>
-                    <p>Expound the actual teachings. of the great explorer of the truth, the master-builder of No one rejects, dislikes, or human happiness. </p>
+                    <h3>Corporate Restructuring Services</h3>
+                    <h5>Mergers and Acquisitions (M&A)</h5>
+                    <ul>
+                        <li><b>Strategic Advisory:</b>We offer end-to-end advisory services for mergers and acquisitions, helping companies identify strategic opportunities, conduct due diligence, and negotiate favorable terms. </li>
+                        <li><b>Transaction Support:</b>Our team provides comprehensive support throughout the transaction lifecycle, from initial planning and valuation to deal structuring and post-merger integration. </li>
+                    </ul>
                     <br>
+                    <h5>Demerger</h5>
+                    <ul>
+                        <li><b>Smooth Transition:</b>We assist companies in executing demergers, ensuring a smooth transition and minimal disruption to operations. </li>
+                        <li><b>Optimal Outcomes:</b>Our strategic guidance helps maximize the benefits of demerging business units, allowing for focused growth and improved efficiency.</li>
+                    </ul>
+                    <br>
+                    <h5>Takeover and Open Offer</h5>
+                    <ul>
+                        <li><b>Regulatory Compliance:</b>We provide expert support in executing takeovers and managing open offers, ensuring compliance with regulatory requirements. </li>
+                        <li><b>Strategic Execution:</b>Our team ensures that the process is executed strategically to achieve the best possible outcomes for all stakeholders.</li>
+                    </ul>
+                    <br>
+                    <h5>Delisting</h5>
+                    <ul>
+                        <li><b>Voluntary and Compulsory Delisting:</b>We offer advisory services for both voluntary and compulsory delisting of securities, ensuring a seamless and compliant process.</li>
+                        <li><b>Shareholder Communication:</b>We facilitate effective communication with shareholders and regulatory bodies to ensure transparency and compliance. </li>
+                    </ul>
+                    <br>
+                    <h5>Buy Back of Shares</h5>
+                    <ul>
+                        <li><b>Enhancing Shareholder Value:</b>We assist companies in executing share buybacks, providing strategic guidance and regulatory compliance to enhance shareholder value. </li>
+                        <li><b>Efficient Execution:</b>Our team ensures that the buyback process is executed efficiently, minimizing any potential disruptions.</li>
+                    </ul>
+                    <br>
+                    <h3>Why Choose Religo Capital Advisors</h3>
+                    <p><b>Strategic Expertise:</b>Our team has extensive experience in managing complex corporate restructuring initiatives, ensuring successful outcomes. </p>
+                    <p><b>Comprehensive Support:</b>We provide end-to-end support, from initial consultation to execution and post-restructuring integration, ensuring a seamless process. </p>
+                    <p><b>Proven Track Record:</b>With a robust track record of facilitating successful restructuring transactions, we have demonstrated our ability to deliver exceptional results consistently. </p>
+                    <p><b>Customized Solutions:</b>Our solutions are tailored to meet the unique needs of each client, ensuring personalized service and optimal outcomes. </p>
+                    <p><b>Market Insights:</b>Leveraging our deep market knowledge and extensive network to provide strategic insights and identify the best opportunities for our clients. </p>
+                    <div class="height-50"></div>
+                    <h3>FAQs</h3>
+                    <!--<p>Expound the actual teachings. of the great explorer of the truth, the master-builder of No one rejects, dislikes, or human happiness. </p>-->
+                    <br>
+                    <div id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="toggle two">
+                            <div class="toggle-heading" role="tab">
+                                <a role="button" data-bs-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fa fa-plus"></i> What is corporate restructuring and why is it important?
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel">
+                                <div class="toggle-body">
+                                    <p>Corporate restructuring involves reorganizing a company's structure, operations, or finances to enhance efficiency, competitiveness, and value. It is important for adapting to market changes, improving performance, and achieving strategic goals.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toggle two">
+                            <div class="toggle-heading" role="tab">
+                                <a role="button" data-bs-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fa fa-minus"></i> How does Religo assist with mergers and acquisitions?
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel">
+                                <div class="toggle-body">
+                                    <p>We provide end-to-end advisory services, including strategic planning, due diligence, valuation, negotiation, and post-merger integration, ensuring successful M&A transactions. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toggle two">
+                            <div class="toggle-heading" role="tab">
+                                <a role="button" data-bs-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fa fa-plus"></i> What is a demerger and how can it benefit my company?
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+                                <div class="toggle-body">
+                                    <p>A demerger involves separating a company into two or more independent entities. It can benefit your company by allowing focused growth, improving efficiency, and unlocking value for shareholders. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toggle two">
+                            <div class="toggle-heading" role="tab">
+                                <a role="button" data-bs-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fa fa-plus"></i> How does Religo ensure compliance during takeovers and open offers?
+                                </a>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel">
+                                <div class="toggle-body">
+                                    <p>Our team provides expert support in executing takeovers and managing open offers, ensuring compliance with regulatory requirements and best practices. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <blockquote>
-                        <p>consectetur adipiscing elit. Aenean Lorem ipsm dolor sit the power of consectetur adi pisi cing elit, sed do eiusmod tempor xercitationemut labore</p>
+                        <p>At Religo Capital Advisors Private Limited, we are committed to empowering companies through strategic corporate restructuring services. Our comprehensive solutions and experienced team ensure that we deliver exceptional value and drive growth for our clients. </p>
                     </blockquote>
                     <br>
-                    <h3>Safety wealth</h3>
+                    <!-- <h3>Safety wealth</h3>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="chart-widget">
@@ -202,60 +306,7 @@
                         </div>
                         <div class="col-md-4"><img src="images/services-img.jpg" alt=""></div>
                     </div>
-                    <div class="height-50"></div>
-                    <h3>Business plan market</h3>
-                    <p>Expound the actual teachings. of the great explorer of the truth, the master-builder of No one rejects, dislikes, or human happiness. </p>
-                    <br>
-                    <div id="accordion" role="tablist" aria-multiselectable="true">
-                        <div class="toggle two">
-                            <div class="toggle-heading" role="tab">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <i class="fa fa-plus"></i> What is do i have to tell you a few lorem?
-                                </a>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel">
-                                <div class="toggle-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore. Love life’s sweetest reward Let it flow it floats back to you.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="toggle two">
-                            <div class="toggle-heading" role="tab">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                                    <i class="fa fa-minus"></i> Insight and fun facts every time
-                                </a>
-                            </div>
-                            <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel">
-                                <div class="toggle-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore. Love life’s sweetest reward Let it flow it floats back to you.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="toggle two">
-                            <div class="toggle-heading" role="tab">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
-                                    <i class="fa fa-plus"></i> What is do i have to tell you a few lorem?
-                                </a>
-                            </div>
-                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
-                                <div class="toggle-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore. Love life’s sweetest reward Let it flow it floats back to you.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="toggle two">
-                            <div class="toggle-heading" role="tab">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
-                                    <i class="fa fa-plus"></i> What is do i have to tell you a few lorem?
-                                </a>
-                            </div>
-                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel">
-                                <div class="toggle-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore. Love life’s sweetest reward Let it flow it floats back to you.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="height-50"></div>
                     <div class="row">
                         <div class="col-md-6">
@@ -283,9 +334,9 @@
                     <p>Expound the actual teachings. of the great explorer of the truth, the master-builder of No one rejects, dislikes, or human happiness. </p>
                     <div class="height-20"></div>
                     <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#investment" aria-controls="investment" role="tab" data-toggle="tab">Investment</a></li>
-                        <li role="presentation"><a href="#growth" aria-controls="growth" role="tab" data-toggle="tab">Growth</a></li>
-                        <li role="presentation"><a href="#risks-of-investing" aria-controls="risks-of-investing" role="tab" data-toggle="tab">Risks of Investing</a></li>
+                        <li role="presentation" class="active"><a href="#investment" aria-controls="investment" role="tab" data-bs-toggle="tab">Investment</a></li>
+                        <li role="presentation"><a href="#growth" aria-controls="growth" role="tab" data-bs-toggle="tab">Growth</a></li>
+                        <li role="presentation"><a href="#risks-of-investing" aria-controls="risks-of-investing" role="tab" data-bs-toggle="tab">Risks of Investing</a></li>
                     </ul>
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="investment">
@@ -299,7 +350,7 @@
                         <div role="tabpanel" class="tab-pane" id="risks-of-investing">
                             <p>expound the actual teachings. of the great explorer of the truth, the  aster-builder of No one rejects, dislikes, or human happiness. </p>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -318,7 +369,7 @@
                         </div>
                     </div>
                     <div class="col-md-9 col-sm-9">
-                        <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem or phone +11 987 654 3210 ipsum quia dolor sit amet, consectetur.</p>
+                        <p>Religo Capital Advisors Private Limited is a full-service merchant banking firm that excels in providing a broad spectrum of financial services, including Merchant Banking Services, Corporate Advisory Services, and Asset Management Services. Our team of highly skilled professionals works closely with clients to craft tailored solutions that meet their unique financial needs. </p>
                     </div>
                 </div>
                 <div class="height-50"></div>
@@ -326,7 +377,7 @@
                     <div class="footer-address-widget clearfix">
                         <ul>
                             <li><i class="icon-telephone114"></i>+1 900 234 567<a href="mailto:support@advisor.com">supprt@advisor.com</a></li>
-                            <li><i class="icon-icons74"></i>Manhattan Hall,<span>Advisor Ltd 1258, Melbourne, australia</span></li>
+                            <li><i class="icon-icons74"></i>901, Shivarth-The Ace,<span>Sindhu Bhavan,Bodakdev,Ahmedabad</span></li>
                         </ul>
                     </div>
                     <div class="row">
@@ -373,7 +424,7 @@
                 <div class="footer-right">
                     <div class="newsletter-widget">
                         <h4>Our Newsletter</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod.</p>
+                        <p><b>Stay Updated with Us!</b><br>Subscribe to our newsletter for exclusive updates and latest news.</p>
                         <div class="form">
                             <p class="subscribe_success" id="subscribe_success" style="display:none;"></p>
                             <p class="subscribe_error" id="subscribe_error" style="display:none;"></p>
@@ -397,14 +448,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-6"><p>Copyright © 2024. All rights reserved.</p></div>
-                    <div class="col-md-6 col-sm-6"><p class="text-right">Designed by <a href="#."></a></p></div>
+                    <div class="col-md-6 col-sm-6"><p class="text-end">Designed by <a href="#."></a></p></div>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- FOOTER SCRIPTS ================================================== -->
-    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/counter.js"></script>
