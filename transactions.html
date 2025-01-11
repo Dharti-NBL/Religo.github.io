@@ -51,47 +51,59 @@
     <header id="header" class="header-three">
         <div class="container-fluid">
             <!-- HEADER INNER -->
-            <div class="header clearfix">
-                <a href="index.html" class="logo"><img src="images/logo.svg" alt=""></a>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-nav" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+            <div class="header d-flex justify-content-between align-items-center">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <!-- Navbar Toggle for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-nav" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- <ul class="header-links clearfix">
-                    <li class="header-number"><a href="#."><i class="icon-phone4"></i>+1 900 234 567 - 68</a></li>
-                    <li class="header-time"><a href="#."><i class="icon-clock"></i>Mon to Sat 08:00 - 16:30</a></li>
-                    <li><a href="#." class="btn btn-primary btn-quote" data-text="Get a quote">Get a quote</a></li>
-                </ul> -->
-                <nav class="main-nav navbar-collapse collapse" id="primary-nav">
-                    <ul class="nav nav-pills">
-                        <li class="dropdown"><a href="index.html">Home </a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li class="dropdown">
-                            <a href="services.html">Services <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="capital-market-services.html">Capital Market Services</a></li>
-                                <li><a href="mergersandacquisitions.html">Mergers and Acquisitions</a></li>
-                                <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
-                                <li><a href="corporate-restructuring.html">Corporate Restructuring</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="clientele.html">Clientele</a></li>
-                        <li class="active"><a href="transactions.html">Transactions</a></li>
-                        <li class="dropdown">
-                            <a href="#.">Pages <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="investor-relations.html">Investor Relations</a></li>
-                                <li><a href="insights&resources.html">Insights & Resources</a></li>
-                                <li><a href="legal&compliance.html">Legal & Compliance</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="faq.html">FAQs</a></li>
-                                <li><a href="careers.html">Careers</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact-us.html">Contact Us </a></li>
-                    </ul>
+                <!-- Navigation -->
+                <nav class="main-nav navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse" id="primary-nav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                    <li><a class="dropdown-item" href="capital-market-services.html">Capital Market Services</a></li>
+                                    <li><a class="dropdown-item" href="mergersandacquisitions.html">Mergers and Acquisitions</a></li>
+                                    <li><a class="dropdown-item" href="corporate-advisory.html">Corporate Advisory</a></li>
+                                    <li><a class="dropdown-item" href="corporate-restructuring.html">Corporate Restructuring</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="clientele.html">Clientele</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="transactions.html">Transactions</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                                    <li><a class="dropdown-item" href="investor-relations.html">Investor Relations</a></li>
+                                    <li><a class="dropdown-item" href="insights&amp;resources.html">Insights &amp; Resources</a></li>
+                                    <li><a class="dropdown-item" href="legal&amp;compliance.html">Legal &amp; Compliance</a></li>
+                                    <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -100,14 +112,16 @@
     <!-- BREADCRUMB -->
     <section class="subpage-header">
         <div class="container">
-            <div class="site-title clearfix">
-                <h2>Transactions</h2>
-                <ul class="breadcrumbs">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Transactions</li>
-                </ul>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="site-title clearfix">
+                    <h2>Transactions</h2>
+                    <ul class="breadcrumbs">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Transactions</li>
+                    </ul>
+                </div>
+                <a href="contact-us.html" class="btn btn-primary get-in-touch" data-text="Contact us"><i class="icon-telephone114"></i>Contact us</a>
             </div>
-            <a href="contact-us.html" class="btn btn-primary get-in-touch" data-text="Contact us"><i class="icon-telephone114"></i>Contact us</a>
         </div>
     </section>
 
@@ -251,7 +265,7 @@
                         </div>
                     </div>
                     <div class="col-md-9 col-sm-9">
-                        <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem or phone +11 987 654 3210 ipsum quia dolor sit amet, consectetur.</p>
+                        <p>Religo Capital Advisors Private Limited is a full-service merchant banking firm that excels in providing a broad spectrum of financial services, including Merchant Banking Services, Corporate Advisory Services, and Asset Management Services. Our team of highly skilled professionals works closely with clients to craft tailored solutions that meet their unique financial needs. </p>
                     </div>
                 </div>
                 <div class="height-50"></div>
@@ -259,7 +273,7 @@
                     <div class="footer-address-widget clearfix">
                         <ul>
                             <li><i class="icon-telephone114"></i>+1 900 234 567<a href="mailto:support@advisor.com">supprt@advisor.com</a></li>
-                            <li><i class="icon-icons74"></i>Manhattan Hall,<span>Advisor Ltd 1258, Melbourne, australia</span></li>
+                            <li><i class="icon-icons74"></i>901, Shivarth-The Ace,<span>Sindhu Bhavan,Bodakdev,Ahmedabad</span></li>
                         </ul>
                     </div>
                     <div class="row">
@@ -306,7 +320,7 @@
                 <div class="footer-right">
                     <div class="newsletter-widget">
                         <h4>Our Newsletter</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod.</p>
+                        <p><b>Stay Updated with Us!</b><br>Subscribe to our newsletter for exclusive updates, latest news, and special offers.</p>
                         <div class="form">
                             <p class="subscribe_success" id="subscribe_success" style="display:none;"></p>
                             <p class="subscribe_error" id="subscribe_error" style="display:none;"></p>
@@ -330,14 +344,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-6"><p>Copyright © 2024. All rights reserved.</p></div>
-                    <div class="col-md-6 col-sm-6"><p class="text-right">Designed by <a href="#."></a></p></div>
+                    <div class="col-md-6 col-sm-6"><p class="text-end">Designed by <a href="#."></a></p></div>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- FOOTER SCRIPTS================================================== -->
-    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/counter.js"></script>
