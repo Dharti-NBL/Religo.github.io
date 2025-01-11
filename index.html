@@ -47,58 +47,82 @@
         </div>
     </div>
 
+    <!--<div class="color-switcher position" id="choose_color">
+        <a href="#." class="picker_close"><i class="fa fa-gear"></i></a>
+        <div class="theme-colours">
+            <h5>CHOOSE COLOR:</h5>
+            <ul>
+                <li><a href="#." class="one" id="one"></a></li>
+                <li><a href="#." class="two" id="two"></a></li>
+            </ul>
+        </div>    
+        <div class="clr"></div>
+    </div>-->
+
     <!-- HERDER -->
     <header id="header" class="header-three">
         <div class="container-fluid">
             <!-- HEADER INNER -->
-            <div class="header clearfix">
-                <a href="index.html" class="logo"><img src="images/logo.svg" alt=""></a>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-nav" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+            <div class="header d-flex justify-content-between align-items-center">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <!-- Navbar Toggle for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-nav" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- <ul class="header-links clearfix">
-                    <li class="header-number"><a href="#."><i class="icon-phone4"></i>+1 900 234 567 - 68</a></li>
-                    <li class="header-time"><a href="#."><i class="icon-clock"></i>Mon to Sat 08:00 - 16:30</a></li>
-                    <li><a href="#." class="btn btn-primary btn-quote" data-text="Get a quote">Get a quote</a></li>
-                </ul> -->
-                <nav class="main-nav navbar-collapse collapse" id="primary-nav">
-                    <ul class="nav nav-pills">
-                        <li class="dropdown active"><a href="index.html">Home </a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li class="dropdown">
-                            <a href="services.html">Services <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="capital-market-services.html">Capital Market Services</a></li>
-                                <li><a href="mergersandacquisitions.html">Mergers and Acquisitions</a></li>
-                                <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
-                                <li><a href="corporate-restructuring.html">Corporate Restructuring</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="clientele.html">Clientele</a></li>
-                        <li><a href="transactions.html">Transactions</a></li>
-                        <li class="dropdown">
-                            <a href="#.">Pages <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="investor-relations.html">Investor Relations</a></li>
-                                <li><a href="insights&resources.html">Insights & Resources</a></li>
-                                <li><a href="legal&compliance.html">Legal & Compliance</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="faq.html">FAQs</a></li>
-                                <li><a href="careers.html">Careers</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact-us.html">Contact Us </a></li>
-                    </ul>
+                <!-- Navigation -->
+                <nav class="main-nav navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse" id="primary-nav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                    <li><a class="dropdown-item" href="capital-market-services.html">Capital Market Services</a></li>
+                                    <li><a class="dropdown-item" href="mergersandacquisitions.html">Mergers and Acquisitions</a></li>
+                                    <li><a class="dropdown-item" href="corporate-advisory.html">Corporate Advisory</a></li>
+                                    <li><a class="dropdown-item" href="corporate-restructuring.html">Corporate Restructuring</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="clientele.html">Clientele</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="transactions.html">Transactions</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                                    <li><a class="dropdown-item" href="investor-relations.html">Investor Relations</a></li>
+                                    <li><a class="dropdown-item" href="insights&amp;resources.html">Insights &amp; Resources</a></li>
+                                    <li><a class="dropdown-item" href="legal&amp;compliance.html">Legal &amp; Compliance</a></li>
+                                    <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
     </header>
 
     <!-- MAIN BANNER -->
-    <section class="main-banner margin-0">
+    <section class="main-banner m-0">
         <div class="tp-banner-container arrows-round">
             <div class="tp-banner">
                 <ul>
@@ -314,14 +338,20 @@
         </div>
     </section>
 
-    <section class="padding-bottom-0">
+    <section class="pb-0">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="doing-the-right-text">Doing the <span class="color-purple">right thing,</span> at the right time.</h2>
+            <div class="row align-items-center">
+                <!-- Column 1 -->
+                <div class="col-md-4 animate fadeInLeft">
+                    <h2 class="doing-the-right-text">
+                        Doing the <span class="color-purple">right thing,</span> at the right time.
+                    </h2>
                 </div>
-                <div class="col-md-8">
-                    <p>With over a decade of expertise in capital markets, corporate finance, and business advisory, Religo Capital Advisors is dedicated to helping companies navigate complex financial landscapes. Our tailored solutions are designed to foster growth, ensure transparency, and drive long-term success for businesses across industries.Our Core Values</p>
+                <!-- Column 2 -->
+                <div class="col-md-8 animate fadeInRight">
+                    <p>
+                        With over a decade of expertise in capital markets, corporate finance, and business advisory, Religo Capital Advisors is dedicated to helping companies navigate complex financial landscapes. Our tailored solutions are designed to foster growth, ensure transparency, and drive long-term success for businesses across industries.
+                    </p>
                 </div>
             </div>
         </div>
@@ -447,14 +477,14 @@
                             <div class="col-md-5 animate fadeInLeft"><img src="images/meet-our-advisors-img1.jpg" alt=""></div>
                             <div class="col-md-7 animate fadeInRight">
                                 <div class="meet-advisors-content">
-                                    <h3>Dipen Mandaliya<span>Founder of the Religo Group</span></h3>
+                                    <h3>Dipen Mandaliya<span><b>Founder of the Religo Group</b></span></h3>
                                     <p>Dipen Mandalia is the founder of the Religo Group and a graduate of Middlesex University. His core specialties include corporate banking, financial reporting, and trade finance instruments such as Letters of Credit (L.Cs) and Bank Guarantees (B.Gs). </p>
 
-                                    <ul class="social-text">
+                                 <!--   <ul class="social-text">
                                         <li><a href="#." class="facebook">facebook</a></li>
                                         <li><a href="#." class="twitter">twitter</a></li>
                                         <li><a href="#." class="youtube">youtube</a></li>
-                                    </ul>
+                                    </ul>-->
                                 </div>
                             </div>
                         </div>
@@ -462,14 +492,14 @@
                             <div class="col-md-5"><img src="images/meet-our-advisors-img2.jpg" alt=""></div>
                             <div class="col-md-7">
                                 <div class="meet-advisors-content">
-                                    <h3>Abhishek Jain<span>Rankholder Chartered Accountant</span></h3>
+                                    <h3>Abhishek Jain<span><b>Rankholder Chartered Accountant</b></span></h3>
                                     <p>Abhishek Jain is a rankholder Chartered Accountant expert with a robust background in fundraising, particularly in the areas of SME IPOs, private equity, and corporate finance. Abhishek has successfully guided numerous companies through complex fundraising processes, helping them secure capital for growth and expansion. </p>
 
-                                    <ul class="social-text">
+                                   <!--<ul class="social-text">
                                         <li><a href="#." class="facebook">facebook</a></li>
                                         <li><a href="#." class="twitter">twitter</a></li>
                                         <li><a href="#." class="youtube">youtube</a></li>
-                                    </ul>
+                                    </ul>--> 
                                 </div>
                             </div>
                         </div>
@@ -477,14 +507,14 @@
                             <div class="col-md-5"><img src="images/meet-our-advisors-img3.jpg" alt=""></div>
                             <div class="col-md-7">
                                 <div class="meet-advisors-content">
-                                    <h3>Siddharth Soni<span>Merchant</span></h3>
+                                    <h3>Siddharth Soni<span><b>Merchant</b></span></h3>
                                     <p>Mr. Sidharth Soni is a seasoned Merchant with over 12 years of experience in domestic and international markets. Operating across India and Dubai, Sidharth has developed a strong foothold in the comodity trade.</p>
 
-                                    <ul class="social-text">
+                                  <!--<ul class="social-text">
                                         <li><a href="#." class="facebook">facebook</a></li>
                                         <li><a href="#." class="twitter">twitter</a></li>
                                         <li><a href="#." class="youtube">youtube</a></li>
-                                    </ul>
+                                    </ul>-->  
                                 </div>
                             </div>
                         </div>
@@ -506,19 +536,27 @@
                 </div>
                 <div class="request-a-callback-form">
                     <form>
-                        <input type="text" placeholder="Your Name">
-                        <input type="text" placeholder="Email Address">
-                        <input type="text" placeholder="Phone Number">
-                        <div class="styled-select">
-                            <select>
-                                <option>I would like to discuss:</option>
-                                <option>Personal Finance</option>
-                                <option>Stock trading</option>
-                                <option>Retirement</option>
-                                <option>Other</option>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select">
+                                <option value="I would like to discuss:" selected>I would like to discuss:</option>
+                                <option value="Personal Finance">Personal Finance</option>
+                                <option value="Stock trading">Stock trading</option>
+                                <option value="Retirement">Retirement</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
-                        <button data-text="submit" class="btn btn-primary">Submit</button>
+                        <div class="mb-3">
+                            <button data-text="submit" type="submit" class="btn btn-primary">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -530,23 +568,23 @@
         <div class="container">
             <div class="heading text-center animate bounceIn">
                 <h2>Happy Customers</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore.</p>
+                <p>Our clients' satisfaction is our top priority.<br> Here are some words from those who have experienced our services and products.</p>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="testimonial animate fadeInUp">
                         <div class="testimonial-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
+                            <p>The team at Religo Capital Advisor was incredibly professional and delivered beyond our expectations. Their solutions were innovative and tailored to our needs. Highly recommended!</p>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="testimonials-author">
                                     <img class="img-circle" src="images/review-author-img.png" alt="">
-                                    <p>Boris Hunt<span>(Sales Agent)</span></p>
+                                    <p>Sophia Johnson<span>(Marketing Manager)</span></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="text-right">
+                                <div class="text-end">
                                     <ul class="rating">
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
@@ -562,17 +600,17 @@
                 <div class="col-md-6">
                     <div class="testimonial animate fadeInUp" data-delay="100">
                         <div class="testimonial-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
+                            <p>Choosing Religo Capital Advisor was the best decision for our business. They understood our goals and provided exceptional service every step of the way.</p>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="testimonials-author">
                                     <img class="img-circle" src="images/review-author-img.png" alt="">
-                                    <p>Boris Hunt<span>(Sales Agent)</span></p>
+                                    <p>James Anderson<span>James Anderson</span></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="text-right">
+                                <div class="text-end">
                                     <ul class="rating">
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
@@ -597,18 +635,18 @@
                     <li class="cd-testimonials-item">
                         <div class="testimonial">
                             <div class="testimonial-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
+                                <p>Working with Religo Capital Advisor was an absolute pleasure. Their solutions are truly innovative, and they exceeded our expectations in every way!</p>
+                              <!--  <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>-->
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="testimonials-author">
                                         <img class="img-circle" src="images/review-author-img.png" alt="">
-                                        <p>Boris Hunt<span>(Sales Agent)</span></p>
+                                        <p><b>Ethan Brooks</b><span>(Financial Advisor)</span></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="text-right">
+                                    <div class="text-end">
                                         <ul class="rating">
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
@@ -624,17 +662,17 @@
                     <li class="cd-testimonials-item">
                         <div class="testimonial">
                             <div class="testimonial-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
+                                <p>Religo Capital Advisor understood our business needs and delivered beyond what we expected. The team was supportive and proactive throughout.</p>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="testimonials-author">
                                         <img class="img-circle" src="images/review-author-img.png" alt="">
-                                        <p>Boris Hunt<span>(Sales Agent)</span></p>
+                                        <p><b>Olivia Carter</b><span>(Business Consultant)</span></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="text-right">
+                                    <div class="text-end">
                                         <ul class="rating">
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
@@ -650,17 +688,17 @@
                     <li class="cd-testimonials-item">
                         <div class="testimonial">
                             <div class="testimonial-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
+                                <p>The professionalism and expertise of Religo Capital Advisor helped us achieve our goals efficiently. Their team is fantastic!</p>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="testimonials-author">
                                         <img class="img-circle" src="images/review-author-img.png" alt="">
-                                        <p>Boris Hunt<span>(Sales Agent)</span></p>
+                                        <p><b>Liam Bennett </b><span>(Operations Specialist)</span></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="text-right">
+                                    <div class="text-end">
                                         <ul class="rating">
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
@@ -676,18 +714,18 @@
                     <li class="cd-testimonials-item">
                         <div class="testimonial">
                             <div class="testimonial-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
+                                <p>Religo Capital Advisor brought fresh ideas that transformed our business strategy. Their support has been invaluable.</p>
+                              <!--  <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>-->
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="testimonials-author">
                                         <img class="img-circle" src="images/review-author-img.png" alt="">
-                                        <p>Boris Hunt<span>(Sales Agent)</span></p>
+                                        <p><b>Ava Peterson</b><span>(Product Manager)</span></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="text-right">
+                                    <div class="text-end">
                                         <ul class="rating">
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
@@ -703,17 +741,17 @@
                     <li class="cd-testimonials-item">
                         <div class="testimonial">
                             <div class="testimonial-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
+                                <p>Thanks to Religo Capital Advisor, we saw significant growth in a short time. Their insights are unmatched.</p>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="testimonials-author">
                                         <img class="img-circle" src="images/review-author-img.png" alt="">
-                                        <p>Boris Hunt<span>(Sales Agent)</span></p>
+                                        <p><b>Mason Reed</b><span>(Technical Consultant)</span></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="text-right">
+                                    <div class="text-end">
                                         <ul class="rating">
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
@@ -729,18 +767,18 @@
                     <li class="cd-testimonials-item">
                         <div class="testimonial">
                             <div class="testimonial-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
+                                <p>Religo’s team is incredibly talented. They not only listened to our concerns but also provided exceptional solutions tailored to our needs.</p>
+                             <!--   <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>-->
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="testimonials-author">
                                         <img class="img-circle" src="images/review-author-img.png" alt="">
-                                        <p>Boris Hunt<span>(Sales Agent)</span></p>
+                                        <p><b>Emma Scott</b><span>(HR Manager)</span></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="text-right">
+                                    <div class="text-end">
                                         <ul class="rating">
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
@@ -756,17 +794,17 @@
                     <li class="cd-testimonials-item">
                         <div class="testimonial">
                             <div class="testimonial-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
+                                <p>I highly recommend Religo Capital Advisor for their professionalism and dedication. They truly care about delivering results.</p>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="testimonials-author">
                                         <img class="img-circle" src="images/review-author-img.png" alt="">
-                                        <p>Boris Hunt<span>(Sales Agent)</span></p>
+                                        <p><b>Noah Adams</b><span>(IT Analyst)</span></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="text-right">
+                                    <div class="text-end">
                                         <ul class="rating">
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
@@ -782,17 +820,17 @@
                     <li class="cd-testimonials-item">
                         <div class="testimonial">
                             <div class="testimonial-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
+                                <p>Religo's expertise helped us streamline our processes and boost productivity. We are beyond satisfied with their services.</p>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="testimonials-author">
                                         <img class="img-circle" src="images/review-author-img.png" alt="">
-                                        <p>Boris Hunt<span>(Sales Agent)</span></p>
+                                        <p><b>Mia Harper</b><span>(Creative Director)</span></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="text-right">
+                                    <div class="text-end">
                                         <ul class="rating">
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
@@ -808,17 +846,17 @@
                     <li class="cd-testimonials-item">
                         <div class="testimonial">
                             <div class="testimonial-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
+                                <p>We were impressed by the level of detail and care Religo Capital Advisor provided. Their solutions worked wonders for our business.</p>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="testimonials-author">
                                         <img class="img-circle" src="images/review-author-img.png" alt="">
-                                        <p>Boris Hunt<span>(Sales Agent)</span></p>
+                                        <p><b> Lucas Gray</b><span>(Business Strategist)</span></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="text-right">
+                                    <div class="text-end">
                                         <ul class="rating">
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
@@ -834,17 +872,17 @@
                     <li class="cd-testimonials-item">
                         <div class="testimonial">
                             <div class="testimonial-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
+                                <p>Religo Capital Advisor’s innovative approach and commitment to excellence left us thoroughly impressed. They’re amazing!</p>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="testimonials-author">
                                         <img class="img-circle" src="images/review-author-img.png" alt="">
-                                        <p>Boris Hunt<span>(Sales Agent)</span></p>
+                                        <p><b>Isabella Kelly</b><span>(Account Executive)</span></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="text-right">
+                                    <div class="text-end">
                                         <ul class="rating">
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
@@ -860,17 +898,17 @@
                     <li class="cd-testimonials-item">
                         <div class="testimonial">
                             <div class="testimonial-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
+                                <p>From start to finish, the team at Religo Capital Advisor delivered outstanding service and results.</p>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="testimonials-author">
                                         <img class="img-circle" src="images/review-author-img.png" alt="">
-                                        <p>Boris Hunt<span>(Sales Agent)</span></p>
+                                        <p><b>Benjamin Hayes</b><span>(Marketing Specialist)</span></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="text-right">
+                                    <div class="text-end">
                                         <ul class="rating">
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
@@ -886,17 +924,17 @@
                     <li class="cd-testimonials-item">
                         <div class="testimonial">
                             <div class="testimonial-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
+                                <p>Their ability to understand complex challenges and provide simple, effective solutions is remarkable. Highly recommended!</p>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="testimonials-author">
                                         <img class="img-circle" src="images/review-author-img.png" alt="">
-                                        <p>Boris Hunt<span>(Sales Agent)</span></p>
+                                        <p><b>Sophia Davis</b><span>(Brand Manager)</span></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="text-right">
+                                    <div class="text-end">
                                         <ul class="rating">
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
@@ -928,7 +966,7 @@
                         </div>
                     </div>
                     <div class="col-md-9 col-sm-9">
-                        <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem or phone +11 987 654 3210 ipsum quia dolor sit amet, consectetur.</p>
+                        <p>Religo Capital Advisors Private Limited is a full-service merchant banking firm that excels in providing a broad spectrum of financial services, including Merchant Banking Services, Corporate Advisory Services, and Asset Management Services. Our team of highly skilled professionals works closely with clients to craft tailored solutions that meet their unique financial needs. </p>
                     </div>
                 </div>
                 <div class="height-50"></div>
@@ -936,7 +974,7 @@
                     <div class="footer-address-widget clearfix">
                         <ul>
                             <li><i class="icon-telephone114"></i>+1 900 234 567<a href="mailto:support@advisor.com">supprt@advisor.com</a></li>
-                            <li><i class="icon-icons74"></i>Manhattan Hall,<span>Advisor Ltd 1258, Melbourne, australia</span></li>
+                            <li><i class="icon-icons74"></i>901, Shivarth-The Ace,<span>Sindhu Bhavan,Bodakdev,Ahmedabad</span></li>
                         </ul>
                     </div>
                     <div class="row">
@@ -983,14 +1021,18 @@
                 <div class="footer-right">
                     <div class="newsletter-widget">
                         <h4>Our Newsletter</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod.</p>
+                        <p><b>Stay Updated with Us!</b><br>Subscribe to our newsletter for exclusive updates, latest news, and special offers.</p>
                         <div class="form">
                             <p class="subscribe_success" id="subscribe_success" style="display:none;"></p>
                             <p class="subscribe_error" id="subscribe_error" style="display:none;"></p>
-                            <form name="subscribe_form" id="subscribe_form" method="post" action="#" onSubmit="return false">
-                                <input type="text" data-delay="300" placeholder="Your Name" name="subscribe_name" id="subscribe_name" onKeyPress="removeChecks();" class="input">
-                                <input type="text" data-delay="300" placeholder="Email Address" name="subscribe_email" id="subscribe_email" onKeyPress="removeChecks();" class="input">
-                                <button class="btn btn-primary" name="Subscribe" type="submit" data-text="Subscribe" onClick="validateSubscription();">Subscribe</button>
+                            <form name="subscribe_form" id="subscribe_form" method="post" action="#" onsubmit="return false">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" data-delay="300" placeholder="Your Name" name="subscribe_name" id="subscribe_name" onkeypress="removeChecks();">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" data-delay="300" placeholder="Email Address" name="subscribe_email" id="subscribe_email" onkeypress="removeChecks();">
+                                </div>
+                                <button class="btn btn-primary" name="Subscribe" type="submit" data-text="Subscribe" onclick="validateSubscription();">Subscribe</button>
                             </form>
                         </div>
                         <ul class="social">
@@ -1007,14 +1049,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-6"><p>Copyright © 2024. All rights reserved.</p></div>
-                    <div class="col-md-6 col-sm-6"><p class="text-right">Designed by <a href="#."></a></p></div>
+                    <div class="col-md-6 col-sm-6"><p class="text-end">Designed by <a href="#."></a></p></div>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- FOOTER SCRIPTS ================================================== -->
-    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/counter.js"></script>
