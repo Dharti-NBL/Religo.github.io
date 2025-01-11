@@ -624,7 +624,7 @@ font-family: "Open Sans",sans-serif;}
 .company-history li .history-content h4{ margin-bottom:10px;}
 .company-history li:last-child .history-content{ padding-bottom:0;}
 .text-box img{ margin-bottom:35px;}
-.highlighted-sec .text-box{ padding:40px; text-align:center;min-height: 293px;}
+.highlighted-sec .text-box{ padding:30px; text-align:center;min-height: 293px;}
 .highlighted-sec li{ list-style:none; color:#fff; width:33.3%; float:left;}
 .highlighted-sec li .text-box h4{ color:#fff;margin-bottom: 5px;}
 .highlighted-sec li .text-box i{ font-size:100px;margin-bottom: 5px;}
@@ -1427,7 +1427,9 @@ input[type="text"], input[type="email"], input[type="number"], input[type="passw
 #cases-container figure {
     margin: 0;
 }
-
-.left-nav li {
-    margin-bottom: 0px;
+.highlighted-sec .text-box p {
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
 }
